@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.huatec.myapplication">
+
+    <!--  网络权限  -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!--  存储卡写  -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!--  存储卡读  -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_images"
+        android:label="看图"
+        android:roundIcon="@mipmap/ic_images"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoAction">
+        <activity android:name=".model.SecondActivity"/>
+        <activity android:name=".model.EquipmentListActivity" />
+        <activity android:name=".model.BasicListActivity" />
+        <activity android:name=".activity.PhotoDetailActivity"/>
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.SplashActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+        <activity android:name=".activity.MainActivity" />
+    </application>
+
+
+</manifest>

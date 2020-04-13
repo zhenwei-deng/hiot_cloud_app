@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".model.SecondActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="我是第二个界面" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="输入用户名：" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/bt_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确认" />
+
+        <Button
+            android:id="@+id/bt_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="关闭" />
+
+        <CheckBox
+        android:id="@+id/cb_run"
+        android:text="跳舞"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+        <CheckBox
+
+            android:id="@+id/cb_music"
+            android:text="音乐"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <CheckBox
+            android:id="@+id/cb_man"
+            android:text="男"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <CheckBox
+            android:id="@+id/cb_woman"
+            android:text="女"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Switch
+            android:id="@+id/sw_test"
+            android:checked="true"
+            android:textOff="横向"
+            android:textOn="纵向"
+            android:showText="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/splash_bg" />
+
+    </LinearLayout>
+</ScrollView>

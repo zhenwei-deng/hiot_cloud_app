@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingTop="56dp"
+    android:paddingRight="15dp">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="50dp"
+        android:src="@mipmap/huatec_logo" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tiptet_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:drawableLeft="@mipmap/icon_user"
+        android:drawablePadding="10dp"
+        android:hint="请输入电子邮箱"
+        android:maxLines="1"
+        android:paddingBottom="15dp"
+        android:textColor="#999999"
+        android:textColorHint="#999999"
+        android:textSize="16sp" />
+
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tiptet_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:drawableLeft="@mipmap/icon_password"
+        android:drawablePadding="10dp"
+        android:hint="请输入密码"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:paddingBottom="10dp"
+        android:textColor="#999999"
+        android:textColorHint="#999999"
+        android:textSize="16sp" />
+
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/login_button_bg"
+        android:text="登录"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_forget_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:clickable="false"
+        android:gravity="end"
+        android:padding="5dp"
+        android:text="忘记密码？"
+        android:textColor="#05eeff" />
+
+    <TextView
+        android:id="@+id/tv_link_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:text="没有账户吗？创建账户"
+        android:textColor="#05eeff"
+        android:textSize="16sp" />
+</LinearLayout>

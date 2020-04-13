@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_testName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="显示姓名"
+        android:textSize="18sp"
+        android:textColor="#00ffff"
+        />
+    <TextView
+        android:id="@+id/tv_testClass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="显示班级"
+        android:textSize="18sp"
+        android:textColor="#ff0000"
+        />
+    <TextView
+        android:id="@+id/tv_testId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="显示学号"
+        android:textSize="18sp"
+        android:textColor="#ff00ff"
+        />
+
+    <Button
+        android:id="@+id/bt_test"
+        android:text="点我"
+        android:onClick="onClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="OnClick" />
+    <Button
+        android:id="@+id/bt_basic_list"
+        android:text="基本列表"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/bt_equipment_list"
+        android:text="设备列表"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:text="注销（2班邓振微46号）"
+        android:textSize="20sp"
+        android:background="@drawable/login_button_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>
+

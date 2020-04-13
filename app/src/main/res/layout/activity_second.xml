@@ -16,7 +16,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="我是第二个界面" />
+            android:text="第二个界面" />
 
         <EditText
             android:layout_width="match_parent"
